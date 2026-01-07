@@ -1,0 +1,236 @@
+Here’s a **clean, complete, submission-ready `README.md`** for your **Django CRUD + REST API + Charts** project.
+You can copy-paste this directly into a file named **`README.md`**.
+(Teachers love this. Evaluators love this. Bugs fear this.)
+
+---
+
+# 📝 Task Manager – Django CRUD Application
+
+## 📌 Project Overview
+
+This is a simple web application built using **Python (Django)** that demonstrates:
+
+* ✅ CRUD operations (Create, Read, Update, Delete)
+* ✅ REST APIs using Django REST Framework
+* ✅ PostgreSQL / SQLite database support
+* ✅ Data visualization using Matplotlib (Pie Chart & Bar Graph)
+* ✅ Bootstrap-based HTML frontend
+
+The application manages **tasks**, tracks their completion status, and visualizes task data.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python 3.10+
+* Django
+* Django REST Framework
+* Bootstrap 5
+* Matplotlib
+* SQLite (default) / PostgreSQL (optional)
+
+---
+
+## 📂 Project Structure
+
+```
+taskmanager/
+├── manage.py
+├── taskmanager/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── tasks/
+    ├── models.py
+    ├── views.py
+    ├── serializers.py
+    ├── urls.py
+    └── templates/
+        └── tasks/
+            ├── task_list.html
+            ├── task_form.html
+            └── task_confirm_delete.html
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone or Download the Project
+
+```bash
+git clone <project-repository>
+cd taskmanager
+```
+
+OR extract the ZIP file.
+
+---
+
+### 2️⃣ Create & Activate Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Required Dependencies
+
+```bash
+pip install django djangorestframework matplotlib psycopg2-binary
+```
+
+---
+
+### 4️⃣ Database Migration
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+---
+
+### 5️⃣ Run Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open browser:
+
+```
+http://127.0.0.1:8000/
+```
+
+---
+
+## 🚀 Application Features
+
+### 🔹 Web Interface (HTML + Bootstrap)
+
+* View all tasks
+* Add new task
+* Update existing task
+* Delete task
+* View charts on the task list page
+
+### 🔹 REST API Endpoints
+
+| Method | Endpoint           | Description     |
+| ------ | ------------------ | --------------- |
+| GET    | `/api/tasks/`      | List all tasks  |
+| POST   | `/api/tasks/`      | Create new task |
+| GET    | `/api/tasks/{id}/` | Retrieve task   |
+| PUT    | `/api/tasks/{id}/` | Update task     |
+| DELETE | `/api/tasks/{id}/` | Delete task     |
+
+Test APIs using **Postman** or browser.
+
+---
+
+## 📊 Data Visualization
+
+### Pie Chart
+
+Shows percentage of:
+
+* Completed Tasks
+* Pending Tasks
+
+```
+/chart/pie/
+```
+
+### Bar Graph
+
+Shows count of:
+
+* Completed Tasks
+* Pending Tasks
+
+```
+/chart/bar/
+```
+
+Charts are also embedded directly on the **Task List page**.
+
+---
+
+## 🧪 Testing the Application
+
+### Manual Testing
+
+1. Open the homepage
+2. Create multiple tasks
+3. Mark some as completed
+4. Verify:
+
+   * Task list updates correctly
+   * Charts reflect real-time data
+   * APIs return JSON responses
+
+### API Testing (Optional)
+
+Use **Postman**:
+
+* Send GET / POST / PUT / DELETE requests to `/api/tasks/`
+
+---
+
+## 🗄️ Database Configuration (Optional – PostgreSQL)
+
+In `settings.py`:
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'taskdb',
+        'USER': 'postgres',
+        'PASSWORD': 'yourpassword',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates a complete **Django-based CRUD application** with REST APIs, frontend UI, and data visualization, making it suitable for:
+
+* Academic projects
+* Mini-project submissions
+* Django practice & portfolio
+
+---
+
+## 👤 Author
+
+**Nikhil Thakare**
+
+---
+
+If you want, I can also:
+
+* Convert this README into **PDF**
+* Add **screenshots section**
+* Add **Supabase PostgreSQL setup**
+* Create **ZIP file structure checklist**
+
+Just say it 😄
